@@ -1,0 +1,75 @@
+button{
+  background:#FFF;
+  border:1px solid black;
+}
+button:focus{
+  outline:none;
+}
+.newObjectiveInput{
+  background: #EEE;
+  height:200px;
+  margin:10px 0;
+  display:none;
+}
+.newObjectiveTitle, .newObjectiveContent, .newObjectiveAdd{
+  margin:10px;
+}
+.newObjectiveContent{
+  display:block;
+  height:80px;
+  width:95%;
+}
+h2{
+  margin-top:5px;
+}
+.objective{
+  background: #8ac471;
+  margin:5px;
+  height:180px;
+  width:32.3%;
+  border: 1px solid #000000;
+  border-radius:10px;
+  border-top-right-radius: 0;
+  overflow: scroll;
+}
+@media only screen and (max-width: 991px) {
+    .objective {
+        width:auto;
+    }
+}
+.cross{
+  position:absolute;
+  right:0;
+  top:0;
+  height:30px;
+  width:30px;
+  background:#FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  float:right;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+.modal-title{
+  display:inline;
+}
+.deleteButton{
+  background-color:#db4646;
+  border:none;
+}
+.completion{
+  margin-top:5px;
+  padding-left:5px;
+}
+.completion p{
+  display:inline;
+}
+.backToTop{
+  margin:0;
+  display:none;
+}
+@media only screen and (max-width: 480px) {
+    .backToTop {
+      display:inline;
+    }
+}
