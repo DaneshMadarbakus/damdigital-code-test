@@ -6,7 +6,10 @@ $(() => {
   $(window).resize(checkDevice);
   $('.newObjective').on('click', openTextArea);
 });
-
+function addEventListeners(){
+  $('.cross').on('click', openModal);
+  $('input[type=checkbox]').change(changeBoxColor);
+}
 function openModal () {
   $('#myModal').modal('show');
   $('.deleteButton').off('click').on('click', deleteObjective.bind(this));
@@ -37,10 +40,6 @@ function addNewObjective (){
   $('.row').append(`<div class="col-md-4 objective"><div class="cross">X</div><div class="completion"><p>Completed? </p><input type="checkbox" name="completion" value="completed?"></div><h2>${title}</h2><p>${content}</p></div>`);
   $('.newObjectiveInput').hide();
   addEventListeners();
-}
-function addEventListeners(){
-  $('.cross').on('click', openModal);
-  $('input[type=checkbox]').change(changeBoxColor);
 }
 function checkDevice(){
   let isMobile = false; 
