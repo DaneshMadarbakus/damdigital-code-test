@@ -32,11 +32,6 @@ h2{
   border-top-right-radius: 0;
   overflow: scroll;
 }
-@media only screen and (max-width: 991px) {
-    .objective {
-        width:auto;
-    }
-}
 .cross{
   position:absolute;
   right:0;
@@ -64,12 +59,19 @@ h2{
 .completion p{
   display:inline;
 }
-.backToTop{
-  margin:0;
+.mobileFooter{
   display:none;
+  text-align: center;
+}
+.backToTop{
+  margin:10px;
+  background:#FFF;
+  border:1px solid #000;
+  color:#000;
+  width:200px;
 }
 @media only screen and (max-width: 480px) {
-    .backToTop {
-      display:inline;
+    .mobileFooter {
+      display:block;
     }
 }
